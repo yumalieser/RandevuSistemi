@@ -1,7 +1,10 @@
-﻿namespace RandevuSistemi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace RandevuSistemi.Models
 {
     public class Kullanici
     {
+        [Key]
         public int KullaniciID { get; set; }
         public string KullaniciAd { get; set; }
         public string KullaniciSoyad { get; set; }

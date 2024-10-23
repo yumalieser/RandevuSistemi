@@ -251,3 +251,4 @@ C:\Users\malie\source\repos\RandevuSistemi\RandevuSistemi\obj\Debug\net7.0\refin
 C:\Users\malie\source\repos\RandevuSistemi\RandevuSistemi\obj\Debug\net7.0\RandevuSistemi.pdb
 C:\Users\malie\source\repos\RandevuSistemi\RandevuSistemi\obj\Debug\net7.0\RandevuSistemi.genruntimeconfig.cache
 C:\Users\malie\source\repos\RandevuSistemi\RandevuSistemi\obj\Debug\net7.0\ref\RandevuSistemi.dll
+C:\Users\malie\source\repos\RandevuSistemi\RandevuSistemi\obj\Debug\net7.0\RandevuSistemi.sourcelink.json
