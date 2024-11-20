@@ -1,0 +1,53 @@
+@model List<Kullanici>
+
+@{
+    ViewData["Title"] = "KullaniciListele";
+    Layout = "~/Views/Shared/_YonetimLayout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Tüm Kullanıcılar</h4>
+                <p class="card-description">
+                    Tüm kayıtlı kullanıcılara buradan erişebilirsiniz.
+                </p>
+                <div class="table-responsive pt-3">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th> ID </th>
+                                <th> Kullanıcı Ad-Soyad </th>
+                                <th> Mail </th>
+                                <th> Şifre </th>
+                                <th> Onay Durumu </th>
+                                <th> İşlemler</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td> @item.KullaniciID </td>
+                                    <td> @item.KullaniciAd @item.KullaniciSoyad</td>
+                                    <td> @item.KullaniciMail </td>
+                                    <td> @item.KullaniciSifre </td>
+                                    <td> @item.KullaniciOnay</td>
+                                    <td>
+                                        <a href="#" style="font-size: 23px;">
+                                            <i class="fa fa-eye px-1"></i>
+                                            <i class="fa fa-pencil"></i>
+                                            <a href="/Yonetim/KullaniciSil/@item.KullaniciID"><i class="mdi mdi-delete" style="font-size: 23px;"></i></a>
+                                        </a>
+                                        
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
