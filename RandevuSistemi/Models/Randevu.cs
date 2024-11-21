@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RandevuSistemi.Models
 {
@@ -7,16 +6,14 @@ namespace RandevuSistemi.Models
     {
         [Key]
         public int RandevuID { get; set; }
-        [Column(TypeName = "int")]
-        public RandevuTuru RandevuTuru { get; set; }  // Enum olarak güncellendi        
-        public DateTime RandevuZamani { get; set; }
+        public int CreatedByKullanici { get; set; }
+        public DateTime BaslangicTarihi { get; set; }
+        public DateTime BitisTarihi { get; set; }
+        public TimeSpan BaslangicSaati { get; set; }
+        public TimeSpan BitisSaati { get; set; }
+        public int RandevuSuresi { get; set; } // Duration in minutes
+        public int RandevuTur { get; set; }  // Enum olarak güncellendi        
+        public List<AlinanRandevu> Randevular { get; set; }
         public bool RandevuOnay { get; set; }
-    }
-    public enum RandevuTuru
-    {
-    DoktorRandevusu = 1,
-    DisciRandevusu = 2,
-    GozRandevusu = 3,
-    GenelKontrol = 4
     }
 }

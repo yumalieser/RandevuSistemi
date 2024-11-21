@@ -1,13 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RandevuSistemi.Filters;
 using RandevuSistemi.Models;
+using RandevuSistemi.Data;
 
 namespace RandevuSistemi.Controllers
 {
     [AdminAuthorize]
     public class YonetimController : Controller
     {
-        Context _context = new Context();
+
+        public YonetimController(RandevuDBContext context)
+        {
+            _context = context;
+        }
+
+        private readonly RandevuDBContext _context;
 
         public IActionResult Index()
         {

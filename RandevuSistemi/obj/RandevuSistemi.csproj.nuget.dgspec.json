@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/malie/Documents/GitHub/RandevuSistemi/RandevuSistemi/RandevuSistemi.csproj": {}
+    "c:\\Users\\karat\\Desktop\\MVC\\dosyalar\\RandevuSistemi\\RandevuSistemi\\RandevuSistemi.csproj": {}
   },
   "projects": {
-    "/Users/malie/Documents/GitHub/RandevuSistemi/RandevuSistemi/RandevuSistemi.csproj": {
+    "c:\\Users\\karat\\Desktop\\MVC\\dosyalar\\RandevuSistemi\\RandevuSistemi\\RandevuSistemi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/malie/Documents/GitHub/RandevuSistemi/RandevuSistemi/RandevuSistemi.csproj",
+        "projectUniqueName": "c:\\Users\\karat\\Desktop\\MVC\\dosyalar\\RandevuSistemi\\RandevuSistemi\\RandevuSistemi.csproj",
         "projectName": "RandevuSistemi",
-        "projectPath": "/Users/malie/Documents/GitHub/RandevuSistemi/RandevuSistemi/RandevuSistemi.csproj",
-        "packagesPath": "/Users/malie/.nuget/packages/",
-        "outputPath": "/Users/malie/Documents/GitHub/RandevuSistemi/RandevuSistemi/obj/",
+        "projectPath": "c:\\Users\\karat\\Desktop\\MVC\\dosyalar\\RandevuSistemi\\RandevuSistemi\\RandevuSistemi.csproj",
+        "packagesPath": "C:\\Users\\karat\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\karat\\Desktop\\MVC\\dosyalar\\RandevuSistemi\\RandevuSistemi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/malie/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\karat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,6 +63,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.12, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.14, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -81,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

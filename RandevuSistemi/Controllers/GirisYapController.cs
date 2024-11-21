@@ -1,11 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RandevuSistemi.Data;
 using RandevuSistemi.Models;
 
 namespace RandevuSistemi.Controllers
 {
     public class GirisYapController : Controller
     {
-        Context _context = new Context();
+        private readonly RandevuDBContext _context;
+
+        public GirisYapController(RandevuDBContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             return View();
