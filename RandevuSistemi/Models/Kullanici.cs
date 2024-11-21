@@ -11,6 +11,6 @@ namespace RandevuSistemi.Models
         public string KullaniciMail { get; set; }
         public string KullaniciSifre { get; set; }
         public bool KullaniciOnay { get; set; }
-        public int KullaniciTuru {  get; set; }
+        public int KullaniciTuru {  get; set; } 
     }
 }

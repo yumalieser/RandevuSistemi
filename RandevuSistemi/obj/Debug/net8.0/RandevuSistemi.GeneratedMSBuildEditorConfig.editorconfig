@@ -22,12 +22,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lyaXNZYXBcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/karat/Desktop/MVC/dosyalar/RandevuSistemi/RandevuSistemi/Views/GirisYap/Kaydol.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lyaXNZYXBcS2F5ZG9sLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/karat/Desktop/MVC/dosyalar/RandevuSistemi/RandevuSistemi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/karat/Desktop/MVC/dosyalar/RandevuSistemi/RandevuSistemi/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/karat/Desktop/MVC/dosyalar/RandevuSistemi/RandevuSistemi/Views/Kullanici/Profil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXFByb2ZpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/karat/Desktop/MVC/dosyalar/RandevuSistemi/RandevuSistemi/Views/Kullanici/RandevuAl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXFJhbmRldnVBbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/karat/Desktop/MVC/dosyalar/RandevuSistemi/RandevuSistemi/Views/Kullanici/Randevularim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3VsbGFuaWNpXFJhbmRldnVsYXJpbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/karat/Desktop/MVC/dosyalar/RandevuSistemi/RandevuSistemi/Views/Shared/Error.cshtml]

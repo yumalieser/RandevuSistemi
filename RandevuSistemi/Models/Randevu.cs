@@ -13,7 +13,7 @@ namespace RandevuSistemi.Models
         public TimeSpan BitisSaati { get; set; }
         public int RandevuSuresi { get; set; } // Duration in minutes
         public int RandevuTur { get; set; }  // Enum olarak güncellendi        
-        public List<AlinanRandevu> Randevular { get; set; }
+        public List<AlinanRandevu> AlinanRandevular { get; set; }
         public bool RandevuOnay { get; set; }
     }
 }
