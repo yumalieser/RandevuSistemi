@@ -1,0 +1,39 @@
+﻿@model Randevu
+@{
+    ViewData["Title"] = "RandevuEkle";
+    Layout = "~/Views/Shared/_YonetimLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Randevu Oluşturma</h4>
+                <p class="card-description">Randevu bilgilerini doldurun ve gönderin.</p>
+                
+                <form class="forms-sample" asp-controller="Yonetim" asp-action="RandevuEkle" method="post" enctype="multipart/form-data">                    <!-- Randevu Türü -->
+                    @Html.AntiForgeryToken() <!-- CSRF Koruması için gerekli -->
+                    <div class="form-group">
+                        <label for="RandevuTuru">Randevu Türü</label>
+                        <select class="form-select" id="RandevuTuru" name="RandevuTuru">
+                            <option selected disabled>Randevu Türü Seçin</option>
+                            @foreach (var randevuTuru in ViewBag.RandevuTurleri)
+                            {
+                                <option value="@randevuTuru.Id">@randevuTuru.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Randevu Zamanı -->
+                    <div class="form-group">
+                        <label for="RandevuZamani">Randevu Zamanı</label>
+                        <input type="datetime-local" class="form-control" id="RandevuZamani" name="RandevuZamani" required>
+                    </div>
+
+                    <!-- Gönder Butonu -->
+                    <button type="submit" class="btn btn-primary me-2">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

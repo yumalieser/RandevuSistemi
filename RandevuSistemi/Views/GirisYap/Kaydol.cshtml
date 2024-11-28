@@ -1,0 +1,87 @@
+@model RandevuSistemi.Models.Kullanici
+
+@{
+    ViewData["Title"] = "Kaydol";
+}
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/login/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/login/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/login/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="/login/css/style.css">
+
+    <title>Login #7</title>
+  </head>
+  <body>
+    <br>
+    <br>
+    <h1>Şimdi Kaydol</h1>
+    <br>
+    <br>
+  
+  <div class="container">
+        <form asp-action="Kaydol" method="post">
+            <div class="form-group">
+                <label asp-for="KullaniciAd" class="control-label"></label>
+                <input asp-for="KullaniciAd" class="form-control" />
+                <span asp-validation-for="KullaniciAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciSoyad" class="control-label"></label>
+                <input asp-for="KullaniciSoyad" class="form-control" />
+                <span asp-validation-for="KullaniciSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciMail" class="control-label"></label>
+                <input asp-for="KullaniciMail" class="form-control" />
+                <span asp-validation-for="KullaniciMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciSifre" class="control-label"></label>
+                <input asp-for="KullaniciSifre" class="form-control" type="password" />
+                <span asp-validation-for="KullaniciSifre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KullaniciTuru" class="control-label"></label>
+                <select asp-for="KullaniciTuru" class="form-control">
+                    <option value="1">Normal Kullanıcı</option>
+                    <option value="2">Randevu Oluşturabilen Kullanıcı</option>
+                </select>
+                <span asp-validation-for="KullaniciTuru" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydol" class="btn btn-primary" />
+            </div>
+        </form>
+
+<div>
+    Zaten bir hesabınız var mı? <a asp-action="Index">Giriş Yap</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}</div>
+  </div>
+
+  
+    <script src="/login/js/jquery-3.3.1.min.js"></script>
+    <script src="/login/js/popper.min.js"></script>
+    <script src="/login/js/bootstrap.min.js"></script>
+    <script src="/login/js/main.js"></script>
+  </body>
+</html>

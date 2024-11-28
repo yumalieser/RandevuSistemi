@@ -1,0 +1,71 @@
+@model Kullanici
+@{
+    ViewData["Title"] = "Kullanıcı Ekle";
+    Layout = "~/Views/Shared/_YonetimLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Kullanıcı Oluşturma</h4>
+                <p class="card-description">Lütfen kullanıcı bilgilerini doldurun.</p>
+                
+                <form asp-controller="Yonetim" asp-action="KullaniciEkle" method="post">
+                    @Html.AntiForgeryToken() <!-- CSRF koruması için gerekli -->
+
+                    <!-- Kullanıcı Adı -->
+                    <div class="form-group">
+                        <label asp-for="KullaniciAd">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" asp-for="KullaniciAd" placeholder="Kullanıcı adını girin" />
+                        <span asp-validation-for="KullaniciAd" class="text-danger"></span>
+                    </div>
+
+                    <!-- Kullanıcı Soyadı -->
+                    <div class="form-group">
+                        <label asp-for="KullaniciSoyad">Kullanıcı Soyadı</label>
+                        <input type="text" class="form-control" asp-for="KullaniciSoyad" placeholder="Kullanıcı soyadını girin" />
+                        <span asp-validation-for="KullaniciSoyad" class="text-danger"></span>
+                    </div>
+
+                    <!-- Kullanıcı E-posta -->
+                    <div class="form-group">
+                        <label asp-for="KullaniciMail">Kullanıcı E-posta</label>
+                        <input type="email" class="form-control" asp-for="KullaniciMail" placeholder="Kullanıcı e-posta adresini girin" />
+                        <span asp-validation-for="KullaniciMail" class="text-danger"></span>
+                    </div>
+
+                    <!-- Kullanıcı Şifre -->
+                    <div class="form-group">
+                        <label asp-for="KullaniciSifre">Kullanıcı Şifre</label>
+                        <input type="password" class="form-control" asp-for="KullaniciSifre" placeholder="Kullanıcı şifresini girin" />
+                        <span asp-validation-for="KullaniciSifre" class="text-danger"></span>
+                    </div>
+                    <br>
+                    <!-- Kullanıcı Onay Durumu -->
+                    <div class="form-group form-check">
+                        <input type="hidden" name="KullaniciOnay" value="false" /> <!-- Varsayılan olarak false gönder -->
+                        <input type="checkbox" class="form-check-input" asp-for="KullaniciOnay" />
+                        <label class="form-check-label" asp-for="KullaniciOnay">Kullanıcı Onaylı</label>
+                    </div>
+
+                    <!-- Kullanıcı Türü -->
+                    <div class="form-group">
+                        <label asp-for="KullaniciTuru">Kullanıcı Türü</label>
+                        <select class="form-select" asp-for="KullaniciTuru">
+                            <option selected disabled>Kullanıcı Türü Seçin</option>
+                            <option value="1">Admin</option>
+                            <option value="2">Kullanıcı</option>
+                        </select>
+                        <span asp-validation-for="KullaniciTuru" class="text-danger"></span>
+                    </div>
+                    <br>
+                    <!-- Gönder Buton -->
+                    <button type="submit" class="btn btn-primary me-2">Gönder</button>
+                    <a asp-controller="Yonetim" asp-action="KullaniciListele" class="btn btn-light">İptal</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
